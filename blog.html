@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+
+<body>
+    <header>
+        <h4>La Maison du Cinéma</h4>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="movies.html">Películas</a></li>
+                <li><a href="actors.html">Actores</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <h1> Forma parte de nuestra comunidad</h1>
+        <p>
+        <h4> Para acceder a el blog debes proporcionar algunos datos. Te informaremos cuando te hayamos dado el acceso
+        </h4>
+        </p>
+    </div>
+    <div>
+        <form>
+            <fieldset>
+                <legend> Déjanos saber sobre ti </legend>
+                <div>
+                    <label for="name"> Nombre de usuario: </label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                    <!-- El navegador me daba un error si no ponía el autocomplete aquí -->
+                </div>
+                <label for="email"> Email: </label>
+                <input type="email" id="email" name="email" autocomplete="email" required><!-- y aquí -->
+                <div>
+                    <label for="password"> Contraseña: </label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <label for="genero">¿Cuál es tu género cinematográfico favorito?</label>
+                    <select id="genero" name="genero">
+                        <option value="none"> ---Selecciona un género --- </option>
+                        <option value="comedia"> Comedia </option>
+                        <option value="drama"> Drama</option>
+                        <option value="accion"> Acción </option>
+                        <option value="western"> Western </option>
+                        <option value=" fantasia"> Fantasía </option>
+                        <option value="ninguno"> No tengo un género preferido</option>
+                        <option value="otro"> Otro </option>
+                    </select>
+
+                </div>
+                <div>
+                    <label for="age">Fecha de naciemiento</label>
+                    <input type="date" id="age" name="age" required>
+                </div>
+
+                <div>
+                    <label for="request">Deseo recibir notificiaciones via correo sobre nuevas actualizaciones: </label>
+                    <input type="checkbox" id="request" name="request">
+                </div>
+                <input type="submit" value="Enviar">
+
+            </fieldset>
+
+    </div>
+    </form> <br>
+    <form>
+        <div>
+            <fieldset>
+                <legend>En caso de que ya tengas una cuenta</legend>
+                <div>
+                    <label for="user">Nombre de usuario</label>
+                    <input type="text" id="user" name="user" required>
+                </div>
+                <div>
+                    <label for="passwordUser"> Contraseña </label>
+                    <input type="password" name="passwordUser" id="passwordUser" required>
+                </div>
+                <input type="submit" value="Iniciar Sesión">
+            </fieldset>
+        </div>
+        </div>
+    </form>
+
+    <footer>
+        <a href="index.html">Volver al inicio</a>
+    </footer>
+</body>
+
+</html>
